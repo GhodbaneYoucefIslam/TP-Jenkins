@@ -27,7 +27,7 @@ pipeline {
       }
     }
     
-    stage("Build") {
+    stage('Build') {
       steps {
           bat "gradle build"
           bat "gradle javadoc"
