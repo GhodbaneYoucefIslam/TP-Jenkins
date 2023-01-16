@@ -76,8 +76,9 @@ public class Matrix {
 		return mat;
 	}
 	@Override
-	public int hashCode() {
-		return this.hashcode();
+	    public int hashCode() {
+		return Objects.hash(nrows,ncols);
+	    }
 }
 
 	@Override
