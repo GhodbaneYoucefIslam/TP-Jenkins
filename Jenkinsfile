@@ -48,5 +48,10 @@ pipeline {
       }
     }
 }
+  post {
+        failure {
+            mail bcc: '', body: '''Eror DANGER AAAAHHHHH !!''', cc: '', from: '', replyTo: '', subject: 'Probleme Survenu', to: 'jy_ghodbane@esi.dz'
+        }
+  }
 
 }
