@@ -1,6 +1,6 @@
 package com.example.model;
 
-public class Matrix {
+public class  Matrix {
 
 	private int nrows;
 	private int ncols;
