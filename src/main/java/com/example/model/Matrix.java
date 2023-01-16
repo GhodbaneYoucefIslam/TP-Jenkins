@@ -77,7 +77,7 @@ public class Matrix {
 	}
 	
 	@Override
-	public int hashcode(){
+	public int hashCode(){
 		return nrows*ncols;
 	}
 	
