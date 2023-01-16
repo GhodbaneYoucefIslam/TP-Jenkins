@@ -40,7 +40,13 @@ pipeline {
       steps {
           bat "gradle publish" 
       } 
-    }  
+    }
+    
+    stage("Notification") {
+      steps {
+          notifyEvents message: 'Good evening <b>ISLAM</b>', token: '5S-0a-3fKCME0wr9p5riirUmtHrggCiX'
+      }
+    }
 }
 
 }
