@@ -75,7 +75,10 @@ public class Matrix {
 		}
 		return mat;
 	}
-
+	@Override
+	public int hashCode() {
+		return this.hashcode();
+}
 
 	@Override
 	public boolean equals(Object obj) {
