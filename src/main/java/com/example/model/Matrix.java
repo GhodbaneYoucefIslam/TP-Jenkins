@@ -75,11 +75,12 @@ public class Matrix {
 		}
 		return mat;
 	}
+	
 	@Override
-	    public int hashCode() {
+	public int hashcode(){
 		return nrows*ncols;
-	    }
-}
+	}
+	
 
 	@Override
 	public boolean equals(Object obj) {
