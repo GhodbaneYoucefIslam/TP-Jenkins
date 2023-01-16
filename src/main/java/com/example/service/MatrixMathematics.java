@@ -117,8 +117,9 @@ public class MatrixMathematics {
 	public static Matrix inverse(Matrix matrix) throws NoSquareException {
 		double divider = 1;
 		divider = determinant(matrix);
-		
-		return (transpose(cofactor(matrix)).multiplyByConstant(1.0/divider));
+		if (divider!=0){
+		return (transpose(cofactor(matrix)).multiplyByConstant(1.0/divider));}
+		else return matrix;
 	}
 
 
